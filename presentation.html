@@ -1,48 +1,284 @@
 <!DOCTYPE html>
-<html lang="el">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Manesis Auto Service — Οπτική Ταυτότητα</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  body { margin: 0; background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-  a { color: #C1121F; text-decoration: none; }
-  a:hover { color: #E5383B; }
-</style>
+<script src="./support.js"></script>
 </head>
 <body>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 48px; padding: 64px 24px; max-width: 640px; width: 100%;">
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&amp;family=Chakra+Petch:wght@500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #0E0F10; }
+    a { color: #C1121F; } a:hover { color: #E5383B; }
+  </style>
+</helmet>
 
-  <div style="position: relative; display: flex; flex-direction: column; align-items: center; border: 1px solid #3A3B3F; padding: 32px 52px 26px;">
-    <div style="position: absolute; top: -1px; left: -1px; width: 13px; height: 13px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
-    <div style="position: absolute; top: -1px; right: -1px; width: 13px; height: 13px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
-    <div style="position: absolute; bottom: -1px; left: -1px; width: 13px; height: 13px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
-    <div style="position: absolute; bottom: -1px; right: -1px; width: 13px; height: 13px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <!-- ═══════════ SLIDE 1 — TITLE ═══════════ -->
+  <section data-label="Τίτλος" data-speaker-notes="Παρουσίαση της νέας οπτικής ταυτότητας του συνεργείου Manesis Auto Service." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 64px;">
+    <div style="font: 400 26px 'IBM Plex Mono', monospace; color: #9A9A98; letter-spacing: 4px;">ΟΠΤΙΚΗ ΤΑΥΤΟΤΗΤΑ — 2026</div>
+    <div style="position: relative; display: flex; flex-direction: column; align-items: center; border: 1px solid #3A3B3F; padding: 56px 88px 48px;">
+      <div style="position: absolute; top: -1px; left: -1px; width: 18px; height: 18px; border-top: 3px solid #C1121F; border-left: 3px solid #C1121F;"></div>
+      <div style="position: absolute; top: -1px; right: -1px; width: 18px; height: 18px; border-top: 3px solid #C1121F; border-right: 3px solid #C1121F;"></div>
+      <div style="position: absolute; bottom: -1px; left: -1px; width: 18px; height: 18px; border-bottom: 3px solid #C1121F; border-left: 3px solid #C1121F;"></div>
+      <div style="position: absolute; bottom: -1px; right: -1px; width: 18px; height: 18px; border-bottom: 3px solid #C1121F; border-right: 3px solid #C1121F;"></div>
+      <div style="display: flex; align-items: stretch; gap: 28px;">
+        <div style="font: 700 150px/1 'Chakra Petch', sans-serif;">M</div>
+        <div style="width: 3px; background: #C1121F;"></div>
+        <div style="font: 700 150px/1 'Chakra Petch', sans-serif;">S</div>
+      </div>
+      <div style="height: 30px;"></div>
+      <div style="font: 600 26px 'Chakra Petch', sans-serif; letter-spacing: 12px;">MANESIS</div>
+      <div style="height: 12px;"></div>
+      <div style="font: 500 17px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 9px;">AUTO SERVICE</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 24px; font: 400 24px 'IBM Plex Mono', monospace; color: #55565A;">
+      <div style="width: 48px; height: 1px; background: #3A3B3F;"></div>
+      <div>EST. 2004 · ΣΠΑΤΑ</div>
+      <div style="width: 48px; height: 1px; background: #3A3B3F;"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 2 — ΛΟΓΟΤΥΠΑ: 3 ΚΑΤΕΥΘΥΝΣΕΙΣ ═══════════ -->
+  <section data-label="Λογότυπα" data-speaker-notes="Τρεις σχεδιαστικές κατευθύνσεις: CALIPER με κλίμακα μέτρησης, BLUEPRINT με τεχνικό πλαίσιο, REDLINE με δυναμική διαγώνιο." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; padding: 90px 100px 80px; box-sizing: border-box; gap: 56px;">
+    <div style="display: flex; align-items: baseline; gap: 28px;">
+      <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">01 /</div>
+      <div style="font: 700 60px 'Chakra Petch', sans-serif;">Λογότυπο — Τρεις Κατευθύνσεις</div>
+    </div>
+    <div style="flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+      <div style="border: 1px solid #26272A; display: flex; flex-direction: column;">
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div style="display: flex; align-items: baseline; gap: 5px;">
+              <div style="font: 400 88px 'Michroma', sans-serif; letter-spacing: -2px;">M</div>
+              <div style="font: 400 88px 'Michroma', sans-serif; color: #C1121F; letter-spacing: -2px;">S</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 9px; width: 290px;">
+              <div style="display: flex; align-items: flex-end; justify-content: space-between; height: 11px;">
+                <div style="width: 1px; height: 11px; background: #55565A;"></div>
+                <div style="width: 1px; height: 5px; background: #55565A;"></div>
+                <div style="width: 1px; height: 5px; background: #55565A;"></div>
+                <div style="width: 1px; height: 11px; background: #C1121F;"></div>
+                <div style="width: 1px; height: 5px; background: #55565A;"></div>
+                <div style="width: 1px; height: 5px; background: #55565A;"></div>
+                <div style="width: 1px; height: 11px; background: #55565A;"></div>
+              </div>
+              <div style="height: 1px; background: #55565A;"></div>
+              <div style="display: flex; justify-content: space-between;">
+                <div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 4px;">MANESIS</div>
+                <div style="font: 500 13px 'Chakra Petch', sans-serif; color: #9A9A98; letter-spacing: 4px;">AUTO SERVICE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-top: 1px solid #26272A; padding: 22px 28px; display: flex; flex-direction: column; gap: 6px;">
+          <div style="font: 600 24px 'Chakra Petch', sans-serif;">CALIPER</div>
+          <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">μονόγραμμα ακριβείας με κλίμακα μέτρησης</div>
+        </div>
+      </div>
+      <div style="border: 1px solid #C1121F; display: flex; flex-direction: column;">
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+          <div style="position: relative; display: flex; flex-direction: column; align-items: center; border: 1px solid #3A3B3F; padding: 32px 48px 26px;">
+            <div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+            <div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+            <div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+            <div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+            <div style="display: flex; align-items: stretch; gap: 18px;">
+              <div style="font: 700 80px/1 'Chakra Petch', sans-serif;">M</div>
+              <div style="width: 2px; background: #C1121F;"></div>
+              <div style="font: 700 80px/1 'Chakra Petch', sans-serif;">S</div>
+            </div>
+            <div style="height: 18px;"></div>
+            <div style="font: 600 14px 'Chakra Petch', sans-serif; letter-spacing: 6px;">MANESIS</div>
+            <div style="height: 7px;"></div>
+            <div style="font: 500 10px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 5px;">AUTO SERVICE</div>
+          </div>
+        </div>
+        <div style="border-top: 1px solid #26272A; padding: 22px 28px; display: flex; flex-direction: column; gap: 6px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="font: 600 24px 'Chakra Petch', sans-serif;">BLUEPRINT</div>
+            <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #F5F4F2; background: #C1121F; padding: 3px 10px;">ΕΠΙΛΟΓΗ</div>
+          </div>
+          <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">τεχνικό πλαίσιο σχεδίου με σημεία εγγραφής</div>
+        </div>
+      </div>
+      <div style="border: 1px solid #26272A; display: flex; flex-direction: column;">
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="font: 700 92px/1 'Chakra Petch', sans-serif; font-style: italic;">M</div>
+              <div style="width: 5px; height: 90px; background: #C1121F; transform: skewX(-14deg);"></div>
+              <div style="font: 700 92px/1 'Chakra Petch', sans-serif; font-style: italic; position: relative; left: -14px;">S</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 28px; height: 1px; background: #55565A;"></div>
+              <div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 5px;">MANESIS</div>
+              <div style="font: 500 13px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 5px;">AUTO SERVICE</div>
+              <div style="width: 28px; height: 1px; background: #55565A;"></div>
+            </div>
+          </div>
+        </div>
+        <div style="border-top: 1px solid #26272A; padding: 22px 28px; display: flex; flex-direction: column; gap: 6px;">
+          <div style="font: 600 24px 'Chakra Petch', sans-serif;">REDLINE</div>
+          <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">δυναμικό μονόγραμμα με διαγώνιο ταχύμετρου</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 3 — BLUEPRINT ΣΕ ΕΦΑΡΜΟΓΗ ═══════════ -->
+  <section data-label="Blueprint" data-speaker-notes="Το BLUEPRINT σε σκούρο και ανοιχτό φόντο, και σε μικρή κλίμακα για αυτοκόλλητα." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; padding: 90px 100px 80px; box-sizing: border-box; gap: 56px;">
+    <div style="display: flex; align-items: baseline; gap: 28px;">
+      <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">02 /</div>
+      <div style="font: 700 60px 'Chakra Petch', sans-serif;">BLUEPRINT — Εκδοχές Χρήσης</div>
+    </div>
+    <div style="flex: 1; display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: 1fr 1fr; gap: 32px;">
+      <div style="grid-row: span 2; border: 1px solid #26272A; display: flex; align-items: center; justify-content: center;">
+        <div style="position: relative; display: flex; flex-direction: column; align-items: center; border: 1px solid #3A3B3F; padding: 48px 72px 40px;">
+          <div style="position: absolute; top: -1px; left: -1px; width: 16px; height: 16px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+          <div style="position: absolute; top: -1px; right: -1px; width: 16px; height: 16px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+          <div style="position: absolute; bottom: -1px; left: -1px; width: 16px; height: 16px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+          <div style="position: absolute; bottom: -1px; right: -1px; width: 16px; height: 16px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+          <div style="display: flex; align-items: stretch; gap: 24px;">
+            <div style="font: 700 120px/1 'Chakra Petch', sans-serif;">M</div>
+            <div style="width: 3px; background: #C1121F;"></div>
+            <div style="font: 700 120px/1 'Chakra Petch', sans-serif;">S</div>
+          </div>
+          <div style="height: 26px;"></div>
+          <div style="font: 600 21px 'Chakra Petch', sans-serif; letter-spacing: 9px;">MANESIS</div>
+          <div style="height: 10px;"></div>
+          <div style="font: 500 14px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 7px;">AUTO SERVICE</div>
+        </div>
+      </div>
+      <div style="background: #F5F4F2; display: flex; align-items: center; justify-content: center;">
+        <div style="position: relative; display: flex; flex-direction: column; align-items: center; border: 1px solid #C8C7C4; padding: 26px 40px 20px;">
+          <div style="position: absolute; top: -1px; left: -1px; width: 10px; height: 10px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+          <div style="position: absolute; top: -1px; right: -1px; width: 10px; height: 10px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+          <div style="position: absolute; bottom: -1px; left: -1px; width: 10px; height: 10px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+          <div style="position: absolute; bottom: -1px; right: -1px; width: 10px; height: 10px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+          <div style="display: flex; align-items: stretch; gap: 14px;">
+            <div style="font: 700 60px/1 'Chakra Petch', sans-serif; color: #0E0F10;">M</div>
+            <div style="width: 2px; background: #C1121F;"></div>
+            <div style="font: 700 60px/1 'Chakra Petch', sans-serif; color: #0E0F10;">S</div>
+          </div>
+          <div style="height: 14px;"></div>
+          <div style="font: 600 12px 'Chakra Petch', sans-serif; color: #0E0F10; letter-spacing: 5px;">MANESIS AUTO SERVICE</div>
+        </div>
+      </div>
+      <div style="border: 1px solid #26272A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;">
+        <div style="display: flex; align-items: stretch; gap: 8px;">
+          <div style="font: 700 34px/1 'Chakra Petch', sans-serif;">M</div>
+          <div style="width: 2px; background: #C1121F;"></div>
+          <div style="font: 700 34px/1 'Chakra Petch', sans-serif;">S</div>
+        </div>
+        <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #55565A;">μικρή κλίμακα / αυτοκόλλητο</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 4 — ΚΑΡΤΕΣ CALIPER ═══════════ -->
+  <section data-label="Κάρτες CALIPER" data-speaker-notes="Οι δύο εκδοχές κάρτας με το λογότυπο CALIPER — ανοιχτή πλάτη και full black." style="background: #16171A; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; padding: 90px 100px 80px; box-sizing: border-box; gap: 48px;">
+    <div style="display: flex; align-items: baseline; gap: 28px;">
+      <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">03 /</div>
+      <div style="font: 700 60px 'Chakra Petch', sans-serif;">Επαγγελματικές Κάρτες — CALIPER</div>
+    </div>
+    <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; min-height: 0;">
+      <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0;">
+        <img src="export/cards/Card 2a CALIPER.jpg" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;" alt="Κάρτα 2a CALIPER — μπροστά και πίσω">
+        <div style="font: 400 25px 'IBM Plex Mono', monospace; color: #9A9A98; text-align: center;">2a — σκούρα όψη / ανοιχτή πλάτη με κλίμακα</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0;">
+        <img src="export/cards/Card 2b CALIPER Full Black.jpg" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;" alt="Κάρτα 2b CALIPER Full Black — μπροστά και πίσω">
+        <div style="font: 400 25px 'IBM Plex Mono', monospace; color: #9A9A98; text-align: center;">2b — full black, διπλή σκούρα όψη</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 5 — ΚΑΡΤΕΣ BLUEPRINT ═══════════ -->
+  <section data-label="Κάρτες BLUEPRINT" data-speaker-notes="Οι δύο εκδοχές κάρτας με το λογότυπο BLUEPRINT — NIGHT και FULL BLACK με κόκκινη ράχη." style="background: #16171A; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; padding: 90px 100px 80px; box-sizing: border-box; gap: 48px;">
+    <div style="display: flex; align-items: baseline; gap: 28px;">
+      <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">04 /</div>
+      <div style="font: 700 60px 'Chakra Petch', sans-serif;">Επαγγελματικές Κάρτες — BLUEPRINT</div>
+    </div>
+    <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; min-height: 0;">
+      <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0;">
+        <img src="export/cards/Card 1a NIGHT.jpg" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;" alt="Κάρτα 1a NIGHT — μπροστά και πίσω">
+        <div style="font: 400 25px 'IBM Plex Mono', monospace; color: #9A9A98; text-align: center;">1a — NIGHT, μαύρη όψη / ανοιχτή πλάτη</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0;">
+        <img src="export/cards/Card 1b FULL BLACK.jpg" style="flex: 1; min-height: 0; object-fit: contain; width: 100%;" alt="Κάρτα 1b FULL BLACK — μπροστά και πίσω">
+        <div style="font: 400 25px 'IBM Plex Mono', monospace; color: #9A9A98; text-align: center;">1b — FULL BLACK με κόκκινη ράχη</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 6 — WEBSITE DESKTOP ═══════════ -->
+  <section data-label="Website" data-speaker-notes="Η μονοσέλιδη ιστοσελίδα — ζωντανή προεπισκόπηση, μπορείτε να κάνετε scroll μέσα στο πλαίσιο." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; padding: 90px 100px 80px; box-sizing: border-box; gap: 72px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 36px; width: 460px; flex-shrink: 0;">
+      <div style="display: flex; align-items: baseline; gap: 28px;">
+        <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">05 /</div>
+        <div style="font: 700 60px 'Chakra Petch', sans-serif;">Website</div>
+      </div>
+      <div style="font: 400 26px/1.6 'Chakra Petch', sans-serif; color: #C9C8C5; text-wrap: pretty;">Μονοσέλιδη παρουσίαση με υπηρεσίες, ωράριο, επικοινωνία και χάρτη — στη γλώσσα της νέας ταυτότητας.</div>
+      <div style="display: flex; flex-direction: column; gap: 14px; font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>Hero με λογότυπο BLUEPRINT</div></div>
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>6 υπηρεσίες σε τεχνικά πλαίσια</div></div>
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>Μονόχρωμη φωτογραφία με κόκκινες πινελιές</div></div>
+      </div>
+      <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #55565A;">* ζωντανή προεπισκόπηση — scroll μέσα στο πλαίσιο</div>
+    </div>
+    <div style="flex: 1; height: 100%; border: 1px solid #3A3B3F; position: relative; overflow: hidden; background: #0E0F10;">
+      <div style="position: absolute; top: -1px; left: -1px; width: 16px; height: 16px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; top: -1px; right: -1px; width: 16px; height: 16px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; bottom: -1px; left: -1px; width: 16px; height: 16px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; bottom: -1px; right: -1px; width: 16px; height: 16px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F; z-index: 2;"></div>
+      <iframe src="./website.html" style="width: 1440px; height: 1105px; border: 0; transform: scale(0.795); transform-origin: top left;" title="Website — desktop προεπισκόπηση"></iframe>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 7 — WEBSITE MOBILE ═══════════ -->
+  <section data-label="Website Mobile" data-speaker-notes="Η mobile εκδοχή — κάθετη ροή, μεγάλα κουμπιά κλήσης, ζωντανή προεπισκόπηση." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; padding: 90px 100px 80px; box-sizing: border-box; gap: 72px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 36px; flex: 1;">
+      <div style="display: flex; align-items: baseline; gap: 28px;">
+        <div style="font: 500 24px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 3px;">06 /</div>
+        <div style="font: 700 60px 'Chakra Petch', sans-serif;">Website — Mobile</div>
+      </div>
+      <div style="font: 400 26px/1.6 'Chakra Petch', sans-serif; color: #C9C8C5; text-wrap: pretty; max-width: 700px;">Κάθετη ροή προσαρμοσμένη στο κινητό: sticky header με κουμπί κλήσης, hero με φωτογραφία, και όλες οι ενότητες σε μία στήλη.</div>
+      <div style="display: flex; flex-direction: column; gap: 14px; font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>Κουμπιά κλήσης με ένα άγγιγμα</div></div>
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>Πλάτος 390px — iPhone / Android</div></div>
+        <div style="display: flex; gap: 14px;"><div style="color: #C1121F;">→</div><div>Ίδια ταυτότητα, ίδια δομή ενοτήτων</div></div>
+      </div>
+      <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #55565A;">* ζωντανή προεπισκόπηση — scroll μέσα στο πλαίσιο</div>
+    </div>
+    <div style="width: 430px; height: 870px; flex-shrink: 0; border: 1px solid #3A3B3F; border-radius: 40px; overflow: hidden; position: relative; background: #1A1B1D;">
+      <iframe src="./website-mobile.html" style="width: 478px; height: 967px; border: 0; transform: scale(0.9); transform-origin: top left; position: relative; left: 0; top: -36px;" title="Website — mobile προεπισκόπηση"></iframe>
+    </div>
+  </section>
+
+  <!-- ═══════════ SLIDE 8 — ΚΛΕΙΣΙΜΟ ═══════════ -->
+  <section data-label="Κλείσιμο" data-speaker-notes="Σύνοψη παραδοτέων και στοιχεία επικοινωνίας." style="background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px;">
     <div style="display: flex; align-items: stretch; gap: 16px;">
       <div style="font: 700 72px/1 'Chakra Petch', sans-serif;">M</div>
-      <div style="width: 2px; background: #C1121F;"></div>
+      <div style="width: 3px; background: #C1121F;"></div>
       <div style="font: 700 72px/1 'Chakra Petch', sans-serif;">S</div>
     </div>
-    <div style="height: 18px;"></div>
-    <div style="font: 600 14px 'Chakra Petch', sans-serif; letter-spacing: 6px;">MANESIS</div>
-    <div style="height: 6px;"></div>
-    <div style="font: 500 10px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 5px;">AUTO SERVICE</div>
-  </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+      <div style="font: 700 48px 'Chakra Petch', sans-serif;">Μία ταυτότητα, παντού</div>
+      <div style="font: 400 24px 'IBM Plex Mono', monospace; color: #9A9A98;">Λογότυπο · Κάρτες · Website · Mobile</div>
+    </div>
+    <div style="display: flex; gap: 64px; font: 400 24px 'IBM Plex Mono', monospace; color: #C9C8C5; border-top: 1px solid #26272A; padding-top: 40px;">
+      <div>Βασ. Παύλου 214, Σπάτα</div>
+      <div>210 663 4034</div>
+      <div style="color: #C1121F;">www.msautoservice.gr</div>
+    </div>
+  </section>
 
-  <div style="font: 400 14px 'IBM Plex Mono', monospace; color: #9A9A98; letter-spacing: 3px;">ΟΠΤΙΚΗ ΤΑΥΤΟΤΗΤΑ — 2026</div>
-
-  <nav style="display: flex; flex-direction: column; gap: 14px; width: 100%;">
-    <a href="presentation.html" style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #C1121F; padding: 20px 28px; color: #F5F4F2; font: 600 17px 'Chakra Petch', sans-serif; letter-spacing: 2px;"><span>ΠΑΡΟΥΣΙΑΣΗ</span><span style="color: #C1121F;">→</span></a>
-    <a href="logos.html" style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #26272A; padding: 20px 28px; color: #F5F4F2; font: 600 17px 'Chakra Petch', sans-serif; letter-spacing: 2px;"><span>ΛΟΓΟΤΥΠΑ — 3 ΚΑΤΕΥΘΥΝΣΕΙΣ</span><span style="color: #C1121F;">→</span></a>
-    <a href="cards.html" style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #26272A; padding: 20px 28px; color: #F5F4F2; font: 600 17px 'Chakra Petch', sans-serif; letter-spacing: 2px;"><span>ΕΠΑΓΓΕΛΜΑΤΙΚΕΣ ΚΑΡΤΕΣ</span><span style="color: #C1121F;">→</span></a>
-    <a href="website.html" style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #26272A; padding: 20px 28px; color: #F5F4F2; font: 600 17px 'Chakra Petch', sans-serif; letter-spacing: 2px;"><span>WEBSITE</span><span style="color: #C1121F;">→</span></a>
-    <a href="website-mobile.html" style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #26272A; padding: 20px 28px; color: #F5F4F2; font: 600 17px 'Chakra Petch', sans-serif; letter-spacing: 2px;"><span>WEBSITE — MOBILE</span><span style="color: #C1121F;">→</span></a>
-  </nav>
-
-  <div style="font: 400 12px 'IBM Plex Mono', monospace; color: #55565A;">EST. 2004 · ΣΠΑΤΑ · www.msautoservice.gr</div>
-
-</div>
+</x-import>
+</x-dc>
 </body>
 </html>
