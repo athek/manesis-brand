@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #0E0F10; }
+    a { color: #C1121F; text-decoration: none; } a:hover { color: #E5383B; }
+    html { scroll-behavior: smooth; }
+  </style>
+</helmet>
+
+<div style="min-height: 100vh; background: #0E0F10; color: #F5F4F2; font-family: 'Chakra Petch', sans-serif;">
+
+  <!-- ================= HEADER ================= -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 56px; border-bottom: 1px solid #26272A;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <div style="position: relative; display: flex; align-items: stretch; gap: 5px; border: 1px solid #3A3B3F; padding: 8px 12px;">
+        <div style="position: absolute; top: -1px; left: -1px; width: 7px; height: 7px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+        <div style="position: absolute; top: -1px; right: -1px; width: 7px; height: 7px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+        <div style="position: absolute; bottom: -1px; left: -1px; width: 7px; height: 7px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+        <div style="position: absolute; bottom: -1px; right: -1px; width: 7px; height: 7px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+        <div style="font: 700 20px/1 'Chakra Petch', sans-serif;">M</div>
+        <div style="width: 2px; background: #C1121F;"></div>
+        <div style="font: 700 20px/1 'Chakra Petch', sans-serif;">S</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 3px;">MANESIS</div>
+        <div style="font: 500 9px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 3px;">AUTO SERVICE</div>
+      </div>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 36px; font: 500 13px 'Chakra Petch', sans-serif; letter-spacing: 2px;">
+      <a href="#about" style="color: #C9C8C5;">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>
+      <a href="#services" style="color: #C9C8C5;">ΥΠΗΡΕΣΙΕΣ</a>
+      <a href="#hours" style="color: #C9C8C5;">ΩΡΑΡΙΟ</a>
+      <a href="#location" style="color: #C9C8C5;">ΠΟΥ ΕΙΜΑΣΤΕ</a>
+      <a href="tel:2106634034" style="color: #F5F4F2; border: 1px solid #C1121F; padding: 10px 20px;">210 663 4034</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 1px solid #26272A;">
+    <div style="display: flex; flex-direction: column; justify-content: center; gap: 40px; padding: 96px 72px;">
+      <div style="font: 400 13px 'IBM Plex Mono', monospace; color: #9A9A98; letter-spacing: 2px;">ΣΥΝΕΡΓΕΙΟ ΑΥΤΟΚΙΝΗΤΩΝ — ΣΠΑΤΑ</div>
+      <div style="position: relative; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid #3A3B3F; padding: 40px 56px 34px; align-self: flex-start;">
+        <div style="position: absolute; top: -1px; left: -1px; width: 14px; height: 14px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+        <div style="position: absolute; top: -1px; right: -1px; width: 14px; height: 14px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+        <div style="position: absolute; bottom: -1px; left: -1px; width: 14px; height: 14px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F;"></div>
+        <div style="position: absolute; bottom: -1px; right: -1px; width: 14px; height: 14px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F;"></div>
+        <div style="display: flex; align-items: stretch; gap: 20px;">
+          <div style="font: 700 88px/1 'Chakra Petch', sans-serif;">M</div>
+          <div style="width: 2px; background: #C1121F;"></div>
+          <div style="font: 700 88px/1 'Chakra Petch', sans-serif;">S</div>
+        </div>
+        <div style="height: 20px;"></div>
+        <div style="align-self: center; font: 600 15px 'Chakra Petch', sans-serif; letter-spacing: 7px;">MANESIS</div>
+        <div style="height: 7px;"></div>
+        <div style="align-self: center; font: 500 10px 'Chakra Petch', sans-serif; color: #C1121F; letter-spacing: 6px;">AUTO SERVICE</div>
+      </div>
+      <div style="font: 400 19px/1.65 'Chakra Petch', sans-serif; color: #C9C8C5; max-width: 480px; text-wrap: pretty; font-size: 18px">Τεχνογνωσία και ακρίβεια σε κάθε επισκευή. Πλήρης συντήρηση, διάγνωση και επισκευή για όλες τις μάρκες αυτοκινήτων.</div>
+      <div style="display: flex; gap: 16px;">
+        <a href="tel:6944434084" style="background: #C1121F; color: #F5F4F2; padding: 16px 32px; font: 600 14px 'Chakra Petch', sans-serif; letter-spacing: 2px;">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
+        <a href="#services" style="border: 1px solid #3A3B3F; color: #F5F4F2; padding: 16px 32px; font: 600 14px 'Chakra Petch', sans-serif; letter-spacing: 2px;">ΥΠΗΡΕΣΙΕΣ</a>
+      </div>
+    </div>
+    <div style="position: relative; min-height: 620px; border-left: 1px solid #26272A;">
+      <image-slot id="hero-photo" shape="rect" placeholder="Φωτογραφία συνεργείου — κεντρική" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&amp;w=1800&amp;auto=format&amp;fit=crop" credit="Photo by Chad Kirchoff on Unsplash" credit-href="https://unsplash.com/@chadkirchoff" style="position: absolute; inset: 0; width: 100%; height: 100%; filter: grayscale(1) contrast(1.08) brightness(0.88);"></image-slot>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <div id="about" style="padding: 96px 56px; border-bottom: 1px solid #26272A; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div style="display: flex; align-items: baseline; gap: 24px;">
+        <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 2px;">01 /</div>
+        <div style="font: 700 40px 'Chakra Petch', sans-serif;">Ποιοι Είμαστε</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; font: 400 17px/1.75 'Chakra Petch', sans-serif; color: #C9C8C5; text-wrap: pretty;">
+        <div>Το συνεργείο του Σταύρου Μάνεση λειτουργεί στα Σπάτα από το 2004, με αντικείμενο τη συντήρηση και επισκευή αυτοκινήτων όλων των μαρκών. Πίσω από κάθε εργασία υπάρχει μια απλή αρχή: το αυτοκίνητο φεύγει από το συνεργείο μόνο όταν είναι όπως πρέπει.</div>
+        <div>Με σύγχρονο διαγνωστικό εξοπλισμό, πιστοποιημένα ανταλλακτικά και εμπειρία δεκαετιών, αναλαμβάνουμε από το απλό service μέχρι τις πιο απαιτητικές βλάβες — πάντα με ξεκάθαρη ενημέρωση και κοστολόγηση πριν από κάθε εργασία.</div>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0; border-left: 1px solid #26272A; padding-left: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px 0; border-bottom: 1px solid #26272A;">
+        <div style="font: 700 34px 'Chakra Petch', sans-serif; color: #C1121F;">20+</div>
+        <div style="font: 400 13px 'IBM Plex Mono', monospace; color: #9A9A98;">χρόνια εμπειρίας</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px 0; border-bottom: 1px solid #26272A;">
+        <div style="font: 700 34px 'Chakra Petch', sans-serif;">Όλες οι μάρκες</div>
+        <div style="font: 400 13px 'IBM Plex Mono', monospace; color: #9A9A98;">βενζίνη · πετρέλαιο · υβριδικά</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px 0;">
+        <div style="font: 700 34px 'Chakra Petch', sans-serif;">Γραπτή ενημέρωση</div>
+        <div style="font: 400 13px 'IBM Plex Mono', monospace; color: #9A9A98;">κοστολόγηση πριν από κάθε εργασία</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+  <div id="services" style="padding: 96px 56px; display: flex; flex-direction: column; gap: 56px;">
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 2px;">02 /</div>
+      <div style="font: 700 40px 'Chakra Petch', sans-serif;">Υπηρεσίες</div>
+      <div style="flex: 1; height: 1px; background: #26272A; align-self: center;"></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 01</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Service &amp; Συντήρηση</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Προγραμματισμένο service κατά τις προδιαγραφές του κατασκευαστή, με πιστοποιημένα ανταλλακτικά.</div>
+      </div>
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 02</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Διαγνωστικός Έλεγχος</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Ηλεκτρονική διάγνωση με σύγχρονο εξοπλισμό για ακριβή εντοπισμό βλαβών.</div>
+      </div>
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 03</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Φρένα &amp; Ανάρτηση</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Έλεγχος και επισκευή συστημάτων πέδησης και ανάρτησης για ασφαλή οδήγηση.</div>
+      </div>
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 04</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Κλιματισμός A/C</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Συντήρηση, πλήρωση και απολύμανση συστημάτων κλιματισμού.</div>
+      </div>
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 05</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Ηλεκτρολογικά</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Επισκευή ηλεκτρικών και ηλεκτρονικών συστημάτων, μπαταρίες, φωτισμός.</div>
+      </div>
+      <div style="position: relative; border: 1px solid #26272A; padding: 32px; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: #C1121F;">
+        <div style="font: 500 12px 'IBM Plex Mono', monospace; color: #C1121F;">/ 06</div>
+        <div style="font: 600 21px 'Chakra Petch', sans-serif;">Προετοιμασία ΚΤΕΟ</div>
+        <div style="font: 400 15px/1.6 'Chakra Petch', sans-serif; color: #9A9A98; text-wrap: pretty;">Πλήρης έλεγχος και προετοιμασία του οχήματος για τον τεχνικό έλεγχο.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PHOTO STRIP ================= -->
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0 56px 96px;">
+    <div style="height: 300px;">
+      <image-slot id="photo-1" shape="rect" placeholder="Φωτογραφία — χώρος εργασίας" src="https://images.unsplash.com/photo-1632405862117-236585cfb757?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" credit="Photo by Chi Xiang on Unsplash" credit-href="https://unsplash.com/@chixiang" style="filter: grayscale(1) contrast(1.08) brightness(0.88);"></image-slot>
+    </div>
+    <div style="height: 300px;">
+      <image-slot id="photo-2" shape="rect" placeholder="Φωτογραφία — εξοπλισμός / ανελκυστήρας" src="https://images.unsplash.com/photo-1643701079732-3b1c7a797e3d?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" credit="Photo by Jimmy Nilsson Masth on Unsplash" credit-href="https://unsplash.com/@jimmynilssonmasth" style="filter: grayscale(1) contrast(1.08) brightness(0.88);"></image-slot>
+    </div>
+    <div style="height: 300px;">
+      <image-slot id="photo-3" shape="rect" placeholder="Φωτογραφία — λεπτομέρεια εργασίας" src="https://images.unsplash.com/photo-1637640125496-31852f042a60?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" credit="Photo by Isabela Kronemberger on Unsplash" credit-href="https://unsplash.com/@kronemberger" style="filter: grayscale(1) contrast(1.08) brightness(0.88);"></image-slot>
+    </div>
+  </div>
+
+  <!-- ================= HOURS ================= -->
+  <div id="hours" style="padding: 96px 56px; border-top: 1px solid #26272A; display: grid; grid-template-columns: 1fr 1fr; gap: 72px;">
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div style="display: flex; align-items: baseline; gap: 24px;">
+        <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 2px;">03 /</div>
+        <div style="font: 700 40px 'Chakra Petch', sans-serif;">Ωράριο Λειτουργίας</div>
+      </div>
+      <div style="display: flex; flex-direction: column; font: 400 17px 'IBM Plex Mono', monospace;">
+        <div style="display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #26272A;">
+          <div style="color: #C9C8C5;">Δευτέρα — Παρασκευή</div>
+          <div>08:00 – 17:00</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #26272A;">
+          <div style="color: #C9C8C5;">Σάββατο &amp; Κυριακή</div>
+          <div style="color: #C1121F;">Κλειστά</div>
+        </div>
+        
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 40px; padding-left: 100px; padding-right: 100px">
+      <div style="display: flex; align-items: baseline; gap: 24px;">
+        <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 2px;">04 /</div>
+        <div style="font: 700 40px 'Chakra Petch', sans-serif;">Επικοινωνία</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; font: 400 17px 'IBM Plex Mono', monospace; color: #C9C8C5;">
+        <div style="display: flex; gap: 16px;"><div style="color: #C1121F; width: 44px;">ΔΙΕΥΘ</div><div>Βασ. Παύλου 214, Σπάτα 19004</div></div>
+        <div style="display: flex; gap: 16px;"><div style="color: #C1121F; width: 44px;">ΤΗΛ</div><a href="tel:2106634034" style="color: #F5F4F2;">210 663 4034</a></div>
+        <div style="display: flex; gap: 16px;"><div style="color: #C1121F; width: 44px;">ΚΙΝ</div><a href="tel:6944434084" style="color: #F5F4F2;">6944 434 084</a></div>
+        <div style="display: flex; gap: 16px;"><div style="color: #C1121F; width: 44px;">WEB</div><a href="https://www.msautoservice.gr" style="color: #F5F4F2;">www.msautoservice.gr</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAP ================= -->
+  <div id="location" style="padding: 0 56px 96px; display: flex; flex-direction: column; gap: 40px;">
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <div style="font: 500 13px 'IBM Plex Mono', monospace; color: #C1121F; letter-spacing: 2px;">05 /</div>
+      <div style="font: 700 40px 'Chakra Petch', sans-serif;">Πού Είμαστε</div>
+      <div style="flex: 1; height: 1px; background: #26272A; align-self: center;"></div>
+    </div>
+    <div style="position: relative; border: 1px solid #3A3B3F; height: 480px;">
+      <div style="position: absolute; top: -1px; left: -1px; width: 14px; height: 14px; border-top: 2px solid #C1121F; border-left: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; top: -1px; right: -1px; width: 14px; height: 14px; border-top: 2px solid #C1121F; border-right: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; bottom: -1px; left: -1px; width: 14px; height: 14px; border-bottom: 2px solid #C1121F; border-left: 2px solid #C1121F; z-index: 2;"></div>
+      <div style="position: absolute; bottom: -1px; right: -1px; width: 14px; height: 14px; border-bottom: 2px solid #C1121F; border-right: 2px solid #C1121F; z-index: 2;"></div>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=23.8950%2C37.9520%2C23.9330%2C37.9730&amp;layer=mapnik&amp;marker=37.9625%2C23.9140" style="width: 100%; height: 100%; border: 0; filter: grayscale(1) invert(0.92) contrast(0.9);" title="Χάρτης — Βασ. Παύλου 214, Σπάτα"></iframe>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; font: 400 14px 'IBM Plex Mono', monospace; color: #9A9A98;">
+      <div>Βασ. Παύλου 214, Σπάτα 19004 — δίπλα στον κεντρικό δρόμο</div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%92%CE%B1%CF%83.+%CE%A0%CE%B1%CF%8D%CE%BB%CE%BF%CF%85+214+%CE%A3%CF%80%CE%AC%CF%84%CE%B1+19004" style="color: #C1121F; letter-spacing: 1px;">ΑΝΟΙΓΜΑ ΣΤΟ GOOGLE MAPS →</a>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="border-top: 1px solid #26272A; padding: 40px 56px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div style="display: flex; align-items: stretch; gap: 4px;">
+        <div style="font: 700 16px/1 'Chakra Petch', sans-serif;">M</div>
+        <div style="width: 2px; background: #C1121F;"></div>
+        <div style="font: 700 16px/1 'Chakra Petch', sans-serif;">S</div>
+      </div>
+      <div style="font: 400 12px 'IBM Plex Mono', monospace; color: #55565A;">© 2026 Manesis Auto Service — Σπάτα</div>
+    </div>
+    <div style="font: 400 12px 'IBM Plex Mono', monospace; color: #55565A;">EST. 2004 · PRECISION ENGINEERING</div>
+  </footer>
+
+</div>
+
+<div style="width: 0; height: 0; overflow: hidden;">
+  <x-import component-from-global-scope="image-slot" from="./image-slot.js" hint-size="0,0" style="width: 0; height: 0;"></x-import>
+</div>
+</x-dc>
+</body>
+</html>
